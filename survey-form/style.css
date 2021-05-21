@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: sans-serif;
+    background-image: linear-gradient(115deg, rgba(0,176,165,1) 0%, rgba(0,176,165,0.5) 49%, rgba(0,176,165,1) 100%),
+                      url(https://images.unsplash.com/photo-1565688280018-b7893e3c9175?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Y29tcHV0ZXIlMjBjbGFzc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    z-index: -1;
+    color: white;
+  }
+
+
+#title {
+    margin-top: 0px;
+    font-weight: 500;
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+
+#description {
+    margin-top: 0;
+    font-style: italic;
+    font-size: px;
+    font-weight: 200;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+form {
+    background-color: rgba(1, 56, 52, 0.85);
+    margin: 30px auto;
+    padding: 40px;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+
+label  {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.3rem;
+    height: 30px;
+}
+
+p {
+    font-size: 1.125rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #495075;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+input {
+    cursor: text;
+    font: 400 13.33px Arial;
+}
+
+input, button, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.clue {
+    margin-left: 0.25rem;
+    font-size: 0.9rem;
+    color: #e4e4e4;
+}
+
+.input-radio, .input-checkbox {
+    display: inline-block;
+    margin: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+.input-textarea {
+    min-height: 120px;
+    width:100%;
+    padding: 0.625rem;
+    resize: vertical;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: #37af65;
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+}
+
+@media (min-width: 480px) {
+    form {
+        padding: 2.5rem;
+    }
+}

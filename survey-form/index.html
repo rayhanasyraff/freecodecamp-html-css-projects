@@ -1,0 +1,69 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>BFS Survey Form</title>
+</head>
+<body>
+    <header id="header">
+        <h1 id="title" class="text-center">BFS Survey Form</h1>
+        <p id="description" class="text-center">Thank you for taking your time to help us improve our platform</p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="number" id="number-label">
+          Age <span class="clue">(optional)</span>
+          </label>
+        <input type="number" id="number" name="number" class="form-control" min="1" max="100" placeholder="Age">
+      </div>
+      <div class="form-group">
+        <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
+          <select id="dropdown" class="form-control" name="dropdown" required>
+            <option disabled selected value="select">Select current role</option>
+            <option value="student">Student</option>
+            <option value="full-time-job">Full Time Job</option>
+            <option value="full-time-learner">Full Time Learner</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+      </div>
+      <div class="form-group">
+        <p>Would you recommend BFS to a friend?</p>
+       <label for="definitely" id="definitely-label"><input type="radio" id="definitely" name="friend" value="definitely" class="input-radio" checked> Definitely</label>
+        <label for="maybe" id="maybe-label"><input type="radio" id="maybe" name="friend" value="maybe" class="input-radio"> Maybe</label>
+        <label for="not-sure" id="not-sure-label"><input type="radio" id="not-sure" name="friend" value="not-sure" class="input-radio"> Not Sure</label>
+      </div>
+      <div class="form-group">
+        <p>
+          What would you like to see improved?
+          <span class="clue">(Check all that apply)</span>
+        </p>
+       <label for="front-end" id="front-end-label"><input type="checkbox" id="front-end" name="front-end" value="front-end" class="input-checkbox"> Front-end Projects</label>
+       <label for="back-end" id="back-end-label"><input type="checkbox" id="back-end" name="back-end" value="back-end" class="input-checkbox"> Back-end Projects</label>
+       <label for="data-visual" id="data-visual-label"><input type="checkbox" id="data-visual" name="data-visual" value="data-visual" class="input-checkbox"> Data Visualization</label>
+       <label for="challenges" id="challenges-label"><input type="checkbox" id="challenges" name="challenges" value="challenges" class="input-checkbox"> Challenges</label>
+       <label for="open-source" id="open-source-label"><input type="checkbox" id="open-source" name="open-source" value="open-source" class="input-checkbox"> Open Source Community</label>
+       <label for="gitter" id="gitter-label"><input type="checkbox" id="gitter" name="gitter" value="gitter" class="input-checkbox"> Gitter Help Rooms</label>
+       <label for="videos" id="videos-label"><input type="checkbox" id="videos" name="videos" value="videos" class="input-checkbox"> Videos</label>
+       <label for="city-meet" id="city-meet-label"><input type="checkbox" id="city-meet" name="city-meet" value="city-meet" class="input-checkbox"> City Meetups</label>
+       <label for="wiki" id="wiki-label"><input type="checkbox" id="wiki" name="wiki" value="wiki" class="input-checkbox"> Wiki</label>
+       <label for="forum" id="forum-label"><input type="checkbox" id="forum" name="forum" value="forum" class="input-checkbox"> Forum</label>
+       <label for="additional" id="additional-label"><input type="checkbox" id="additional" name="additional" value="additional" class="input-checkbox"> Additional Courses</label>
+      </div>
+      <div class="form-group">
+        <label for="comment" id="comment-label">Any comments or suggestions?</label>
+        <textarea name="comment" id="comment" placeholder="Enter your comment here..." class="input-textarea"></textarea>
+      </div>
+      <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+    </form>
+  </body>
